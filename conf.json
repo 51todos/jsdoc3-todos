@@ -1,0 +1,26 @@
+{
+	"tags": {
+		"allowUnknownTags": true
+	},
+	"source": {
+		"include": ["src"],
+		"exclude": [],
+		"includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+	},
+	"plugins": [],
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": false
+	},
+	"opts": {
+		"template": "templates/alivedise",
+		"encoding": "utf8",
+		"destination": "./docs",
+		"recurse": true,
+		"query": "value",
+		"private": true,
+		"lenient": true,
+		"tutorials": "./tutorials"
+	}
+}
