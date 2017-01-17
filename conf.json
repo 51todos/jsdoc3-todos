@@ -1,26 +1,46 @@
 {
-	"tags": {
-		"allowUnknownTags": true
+  "tags": {
+	"allowUnknownTags": true
+  },
+  "source": {
+	"include": ["src", "README.md"],
+	"exclude": [],
+	"includePattern": ".+\\.js(doc|x)?$",
+	"excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+	"cleverLinks": false,
+	"monospaceLinks": false,
+	"default": {
+	  "outputSourceFiles" : true
 	},
-	"source": {
-		"include": ["src"],
-		"exclude": [],
-		"includePattern": ".+\\.js(doc|x)?$",
-        "excludePattern": "(^|\\/|\\\\)_"
+	"applicationName": "Assets.js",
+	"openGraph": {
+	  "title": "",
+	  "type": "website",
+	  "image": "",
+	  "site_name": "",
+	  "url": ""
 	},
-	"plugins": [],
-	"templates": {
-		"cleverLinks": false,
-		"monospaceLinks": false
+	"meta": {
+	  "title": "",
+	  "description": "",
+	  "keyword": ""
 	},
-	"opts": {
-		"template": "templates/alivedise",
-		"encoding": "utf8",
-		"destination": "./docs",
-		"recurse": true,
-		"query": "value",
-		"private": true,
-		"lenient": true,
-		"tutorials": "./tutorials"
-	}
+	"linenums": true
+  },
+  "opts": {
+	"template": "templates/jaguarjs",
+	"encoding": "utf8",
+	"destination": "./docs",
+	"recurse": true,
+	"query": "value",
+	"private": true,
+	"lenient": true
+  },
+  "markdown": {
+	"parser": "gfm",
+	"hardwrap": true
+  }
 }

@@ -7,10 +7,10 @@ function AttrRecognizer2() {
     Recognizer.apply(this, arguments);
 }
 
-inherit(AttrRecognizer2, Recognizer, {
+inherit(AttrRecognizer, Recognizer, {
     /**
      * @namespace
-     * @memberof AttrRecognizer2
+     * @memberof AttrRecognizer
      */
     defaults: {
         /**
@@ -22,7 +22,7 @@ inherit(AttrRecognizer2, Recognizer, {
 
     /**
      * Used to check if it the recognizer receives valid input, like input.distance > 10.
-     * @memberof AttrRecognizer2
+     * @memberof AttrRecognizer
      * @param {Object} input
      * @returns {Boolean} recognized
      */
@@ -33,7 +33,7 @@ inherit(AttrRecognizer2, Recognizer, {
 
     /**
      * Process the input and return the state for the recognizer
-     * @memberof AttrRecognizer2
+     * @memberof AttrRecognizer
      * @param {Object} input
      * @returns {*} State
      */
