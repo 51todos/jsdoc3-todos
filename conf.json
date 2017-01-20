@@ -3,7 +3,7 @@
 	"allowUnknownTags": true
   },
   "source": {
-	"include": ["src", "README.md"],
+	"include": ["src/jaguarjs", "README.md"],
 	"exclude": [],
 	"includePattern": ".+\\.js(doc|x)?$",
 	"excludePattern": "(^|\\/|\\\\)_"
@@ -16,28 +16,18 @@
 	  "outputSourceFiles" : true
 	},
 	"applicationName": "Assets.js",
-	"openGraph": {
-	  "title": "",
-	  "type": "website",
-	  "image": "",
-	  "site_name": "",
-	  "url": ""
-	},
 	"meta": {
-	  "title": "",
-	  "description": "",
-	  "keyword": ""
+	  "title": "Assets.js",
+	  "description": "Assets.js - API Document",
+	  "keyword": "Assets.js"
 	},
-	"linenums": true
+	"linenums": false
   },
   "opts": {
 	"template": "templates/jaguarjs",
 	"encoding": "utf8",
-	"destination": "./docs",
-	"recurse": true,
-	"query": "value",
-	"private": true,
-	"lenient": true
+	"destination": "docs/jaguarjs",
+	"recurse": true
   },
   "markdown": {
 	"parser": "gfm",
